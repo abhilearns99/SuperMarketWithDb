@@ -33,8 +33,8 @@ git clone https://github.com/abhilearns99/SuperMarketWithDb.git
 
 Installing Postgres
 ---------------------
-Install postgres in local and use the same username and password as mentioned in the src/main/resources/application.properties
-create a database named superMarketdb by running the below DDL query
+Install postgres in local and use the same username and password as mentioned in the src/main/resources/application.properties .
+Create a database named superMarketdb by running the below DDL query:
 CREATE DATABASE `superMarketdb`
 
 
@@ -43,9 +43,9 @@ Executing the application
 cd supermarket
 java -jar target/superMarket.jar
 
-In postgres, a table Products should now be created
+In postgres, a table products should now be created
 
-Go to postgres SQL editor and run the below DML queries to make the initial product entries
+Go to postgres SQL editor and run the below DML queries to make the initial product entries:
 
 INSERT INTO public.products (product_id, name, quantity, section, unit_price)
 VALUES ('c97e58f9-fbb5-4bf0-a48d-10bbd489414a', 'Lettuce', 16, 'PRODUCE', 3.46);
@@ -73,7 +73,7 @@ The API can be accessed using Postman or Insomnia.
 
 I will demonstrate API requests using Postman below.
 
-API functionality 
+API functionality :
 The following  functionality is specified 
 
 a GET route to retrieve a product by ID: http://localhost:8080/api/products/{product_id}
